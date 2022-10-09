@@ -1,4 +1,4 @@
-from numeros_Naturales import convertir_a_naturales
+from .numeros_Naturales import *
 import unittest
 class PrimerTests(unittest.TestCase):
     def test_1(self): # Importante escribir test primero en el método
