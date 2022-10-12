@@ -1,5 +1,5 @@
 import unittest
-from .numeros_Romanos import *
+from numeros_Romanos import *
 class PrimerTests(unittest.TestCase):
 
     def test_1(self):
