@@ -133,5 +133,5 @@ class PrimerTests(unittest.TestCase):
         self.assertEqual(resultado, "CCCXCIX")
 
 
-if __name__ == "__main__":
+if __name__ == "__main__": # pragma: no cover
     unittest.main()
