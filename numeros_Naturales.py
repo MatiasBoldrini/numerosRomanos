@@ -2,14 +2,6 @@ def convertir_a_naturales(numeroRomano):
     numeroNatural = 0
     orden_numeros_romanos = ["C", "L", "X", "V", "I"]
     lastchar = orden_numeros_romanos[0]
-    for char in orden_numeros_romanos: 
-        cantidad_de_caracteres_repetidos = numeroRomano.count(char)     
-        if cantidad_de_caracteres_repetidos == 4 and "IIII" in numeroRomano or "XXXX" in numeroRomano or "CCCC" in numeroRomano: 
-                return "ERROR"
-        if cantidad_de_caracteres_repetidos > 4  and (char == "I" or char =="X" or char =="C"):
-            return "ERROR" 
-        if cantidad_de_caracteres_repetidos > 1 and (char == "V" or char =="L"):
-            return "ERROR"
     for char in numeroRomano:
         if lastchar == char or orden_numeros_romanos.index(char) > orden_numeros_romanos.index(lastchar):
             if char == "C":
